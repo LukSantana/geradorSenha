@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/d87ce71830.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="mainContainer">
+            <div class="titleContainer">
+                <h1 class="mainTitle"><i class="fa-solid fa-key"></i> Gerador de Senhas</h1>
+            </div>
+            <div class="resultContainer">
+                <span class="password" id="password"></span>
+                <button class="copyBtn" id="copyPw"><i class="fa-solid fa-copy"></i></button>
+            </div>
+            <div class="formContainer">
+                <div class="lenghtControl">
+                    <label for="lenght">Tamanho da Senha</label>
+                    <div class="inputLenght">
+                        <input type="range" id="lenght" value="8" min="6" max="24">
+                        <section class="lenghtNumber">12</section>
+                    </div>
+
+                </div>
+
+                <div class="form-control">
+                    <input type="checkbox" id="lowercase" checked>
+                    <label for="lowercase">Letras Minúsculas</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Letras Maiúsculas</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="checkbox" id="number">
+                    <label for="number">Números</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="checkbox" id="symbol">
+                    <label for="symbol">Símbolos</label>
+                </div>
+
+                <button class="generate" id="generate">Gerar Senha</button>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
